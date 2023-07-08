@@ -1,0 +1,35 @@
+{% extends 'dummy.html' %}
+{% load static %}
+
+{% block title %}
+<title>Home</title>
+<style>
+   h1
+   {
+    background: lavenderblush;
+    color: black;
+    margin-top: 10px;
+   }
+
+   body
+   {
+    background-image: url('');
+   }
+</style>
+    {% endblock %}
+   
+    {% block body_block %}
+    <center>
+        <body>
+            
+        
+        {% if username %}
+        <h2>Welocome mr/mrs {{username}}</h2>
+        {% else %}
+        <h1>Welcome to  home page</h2>
+        {% endif %}
+
+        </body>
+    </center>
+    {% endblock %}
+
